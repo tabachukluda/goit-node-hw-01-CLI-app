@@ -1,20 +1,30 @@
 {
   "name": "goit-node-hw-01-cli-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https:https://github.com/tabachukluda/goit-node-hw-01-CLI-app.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ludmila Tabachuk",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tabachukluda/goit-node-hw-01-CLI-app/issues"
+  },
+  "homepage": "https://github.com/tabachukluda/goit-node-hw-01-CLI-app#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "commander": "^11.0.0",
-    "nanoid": "^5.0.1"
+    "nanoid": "^3.1.16"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
