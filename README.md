@@ -1,11 +1,11 @@
 Сontact list:
-https://monosnap.com/file/Ce81DQohajPE2z7MnQWrgxEhLzyLV9
+https://monosnap.com/file/y19H2HIRDXI1X3WTxlVjsf6PXRWOBk
 
 Get contact by id:
-https://monosnap.com/file/MaVsevIQD6aTYIBqvV8ztLMpWvru5B
+https://monosnap.com/file/I8p8SzQKMML0DgpFkYZSdTv5TDmcRS
 
 Add contact:
-https://monosnap.com/file/OQkZXmxRbjjAxqPgW9Kzk0JIhcknUP
+https://monosnap.com/file/nb7TvxvYiUnXsFDgG2Ttg1gl1kNFJY
 
 Remove contact:
-https://monosnap.com/file/BYuDgw34S85NdwtWtedGFhrOmWYL7x
+https://monosnap.com/file/ik0Jmpadn561QczETGE8GpY5izpeMo
