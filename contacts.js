@@ -1,11 +1,10 @@
 const fs = require('fs').promises
-exports.fs = fs
 const { nanoid } = require('nanoid')
 const path = require('path')
 require('colors')
 
 const contactsPath = path.join(__dirname, 'db', 'contacts.json')
-exports.contactsPath = contactsPath
+
 
 const listContacts = async () => {
 	try {
@@ -19,7 +18,12 @@ const listContacts = async () => {
 const getContactById = async contactId => {
 	try {
 		const contacts = await listContacts()
-		return contacts.filter(({ id }) => id === contactId)
+		const currentContact = contacts.find((contact) => contact.id === contactId);
+
+        if (!currentContact) {
+            return null;
+        }
+        return currentContact;
 	} catch (error) {
 		console.log(`Error: ${error.message}`.red)
 	}
@@ -50,9 +54,9 @@ const removeContact = async (contactId) => {
         if (index === -1) {
             return null
         }
-        const newContacts = contacts.splice(index, 1)
-        await fs.writeFile(contactsPath, JSON.stringify(newContacts, null, 2))
-        return newContacts
+        const  [removedContact] = contacts.splice(index, 1)
+        await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+        return removedContact;
     } catch (error) {
         console.log(`Error: ${error.message}`.red)
     }
